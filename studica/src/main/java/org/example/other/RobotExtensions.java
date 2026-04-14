@@ -1,6 +1,6 @@
 package org.example.other;
 
-import io.github.softv.studica.RobotVmxTitan;
+import io.github.softv.RobotVmxTitan;
 
 public class RobotExtensions {
     public final static float getAnalog(RobotVmxTitan robot, int port) {

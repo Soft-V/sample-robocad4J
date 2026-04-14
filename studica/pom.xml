@@ -12,7 +12,7 @@
         <dependency>
             <groupId>io.github.soft-v</groupId>
             <artifactId>robocad4J</artifactId>
-            <version>1.2.2</version>
+            <version>LATEST</version>
         </dependency>
     </dependencies>
 
