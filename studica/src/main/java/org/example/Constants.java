@@ -1,8 +1,8 @@
 package org.example;
 
 public class Constants {
-    public static final boolean IS_REAL_ROBOT = false;
-    public static final boolean ENABLE_SHUFFLECAD = false;
+    public static final boolean IS_REAL_ROBOT = true;
+    public static final boolean ENABLE_SHUFFLECAD = true;
     public static final int MAIN_LOOP_DELAY = 6; // in ms
 
     public static final int LEFT_MOTOR_PORT = 0;

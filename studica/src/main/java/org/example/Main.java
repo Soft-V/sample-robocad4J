@@ -4,6 +4,13 @@ import java.io.IOException;
 
 public class Main {
     public static void main(String[] args) throws IOException, InterruptedException {
+        if (Constants.IS_REAL_ROBOT) {
+            System.load("/home/pi/opencv/build/lib/libopencv_java490.so");
+        }
+        else {
+            // specify path to the opencv
+        }
+
         // handling signals of prog terminate
         Runtime.getRuntime().addShutdownHook(new Thread(() -> {
             try {

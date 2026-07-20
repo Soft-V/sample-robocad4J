@@ -7,6 +7,9 @@
     <groupId>org.example</groupId>
     <artifactId>studica</artifactId>
     <version>1.0-SNAPSHOT</version>
+    <build>
+        <finalName>UserBuiltJar</finalName>
+    </build>
 
     <dependencies>
         <dependency>
