@@ -33,7 +33,7 @@ public class RobotWrapper {
     }
 
     public void setServoAngle(float angle) {
-        GlobalHolder.robot.setAngleHCDIO(angle, Constants.SERVO_MOTOR_PORT);
+        GlobalHolder.robot.setAngleServo(angle, Constants.SERVO_MOTOR_PORT);
     }
 
     public Mat getCameraImage() {
