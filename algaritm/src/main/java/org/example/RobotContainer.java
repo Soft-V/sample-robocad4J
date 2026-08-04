@@ -1,0 +1,27 @@
+package org.example;
+
+import java.io.IOException;
+
+import io.github.softv.shufflecad.Shufflecad;
+import io.github.softv.RobotAlgaritm;
+
+public class RobotContainer {
+    public static void init() throws IOException {
+        GlobalHolder.robot = new RobotAlgaritm(Constants.IS_REAL_ROBOT);
+        GlobalHolder.wrapper = new RobotWrapper();
+        GlobalHolder.program = new Program();
+        if (Constants.ENABLE_SHUFFLECAD) {
+            GlobalHolder.shufflecad = new Shufflecad(GlobalHolder.robot);
+            GlobalHolder.initVariables();
+        }
+    }
+
+    public static void stop() throws InterruptedException {
+        if (GlobalHolder.program != null)
+            GlobalHolder.program.end();
+        if (GlobalHolder.shufflecad != null)
+            GlobalHolder.shufflecad.stop();
+        if (GlobalHolder.robot != null)
+            GlobalHolder.robot.stop();
+    }
+}
